@@ -1,10 +1,13 @@
 {
   "name": "JATE",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "webpack --mode production",
-    "start": "webpack --watch"
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "install": "cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "server": "nodemon server.js --ignore client",
+    "client": "cd client && npm start"
   },
+  
   "author": "2U",
   "license": "UNLICENSED",
   "devDependencies": {
