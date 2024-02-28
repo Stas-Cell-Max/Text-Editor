@@ -18,6 +18,13 @@ const loadSpinner = () => {
 };
 
 const editor = new Editor();
+if (editor.codeMirrorInstance) {
+  editor.codeMirrorInstance.on('blur', () => {
+      const content = editor.codeMirrorInstance.getValue();
+      putDb(content); // Save the content to IndexedDB
+      console.log('Content saved on blur');
+  });
+} else 
 
 if (typeof editor === 'undefined') {
   loadSpinner();

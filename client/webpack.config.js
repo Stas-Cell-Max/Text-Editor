@@ -8,7 +8,8 @@ const { InjectManifest } = require('workbox-webpack-plugin');
 
 module.exports = () => {
   return {
-    mode: 'development',
+    mode: 'development',  mode: isProduction ? 'production' : 'development',
+    devtool: isProduction ? 'source-map' : 'eval-cheap-module-source-map',
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
