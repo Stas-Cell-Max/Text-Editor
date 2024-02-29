@@ -213,3 +213,8 @@ h1 {
     font-size: 18px;
   }
 }
+
+#buttonInstall {
+  display: none;
+}
+
