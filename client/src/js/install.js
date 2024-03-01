@@ -14,14 +14,12 @@ window.addEventListener('beforeinstallprompt', (event) => {
 
 // TODO: Implement a click event handler on the `butInstall` element
 butInstall.addEventListener('click', async () => {
-   // Hide our user interface that shows our A2HS button
+   
    butInstall.style.display = 'none';
-   // Show the prompt
    deferredPrompt.prompt();
-   // Wait for the user to respond to the prompt
+   
    const { outcome } = await deferredPrompt.userChoice;
    console.log(`User response to the install prompt: ${outcome}`);
-   // We no longer need the prompt. Clear it up.
    deferredPrompt = null;
 
 });
