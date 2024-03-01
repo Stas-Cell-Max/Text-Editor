@@ -9,7 +9,7 @@ const WorkboxPlugin = require("workbox-webpack-plugin");
 // TODO: Add CSS loaders and babel to webpack.
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-module.exports = () => {
+module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
   return {
     mode: 'development',  mode: isProduction ? 'production' : 'development',
@@ -41,7 +41,7 @@ module.exports = () => {
         inject: true,
         icons: [
           {
-            src: path.resolve('src/assets/icons/icon_512x512.png'),
+            src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
           },
