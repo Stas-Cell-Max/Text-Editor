@@ -49,7 +49,7 @@ J.A.T.E is a Progressive Web Application (PWA) that offers a simple yet powerful
 Contributions are welcome! If you have suggestions for improvements or bug fixes, please open an issue or submit a pull request. Ensure your code adheres to the project's existing style for consistency. Thank you for your interest in contributing to J.A.T.E.
 
 ## Deployment
-This application can be deployed on platforms like Heroku or Netlify. Follow the platform's documentation for deploying Node.js apps, ensuring you configure environment variables as needed.
+This application is deployed on Heroku platform: https://stas-text-editor-5bef5333561e.herokuapp.com/
 
 ## Author
 - Developed by Stanislav Morozan, a passionate developer dedicated to creating web solutions that enhance productivity and creativity.
