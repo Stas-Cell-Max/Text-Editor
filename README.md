@@ -34,7 +34,7 @@ J.A.T.E is a Progressive Web Application (PWA) that offers a simple yet powerful
 - IndexedDB
 
 ## Setup and Installation
-1. Clone the repository: `git clone https://github.com/your-username/your-repo-name.git`
+1. Clone the repository: `git clone git@github.com:Stas-Cell-Max/Text-Editor.git`
 2. Navigate to the project directory: `cd your-repo-name`
 3. Install dependencies: `npm install`
 4. Build the client application: `cd client && npm run build`
