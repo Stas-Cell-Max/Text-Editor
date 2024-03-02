@@ -38,3 +38,16 @@ registerRoute(
     ],
   })
 );
+// Custom install event for additional caching
+self.addEventListener('install', (event) => {
+    event.waitUntil(
+      caches.open('additional-cache').then((cache) => {
+        return cache.addAll([
+          // List additional URLs to cache here
+          '/path/to/another/script.js',
+          '/path/to/another/style.css',
+          // etc.
+        ]);
+      })
+    );
+  });
